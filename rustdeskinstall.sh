@@ -192,7 +192,7 @@ case $EXTRAOPT in
 "Yes")
 
 # Create windows install script
-wget https://raw.githubusercontent.com/dinger1986/rustdeskinstall/master/WindowsAgentAIOInstall.ps1
+wget https://raw.githubusercontent.com/PhDLeToanThang/remotedesktop/main/WindowsAgentAIOInstall.ps1
 sudo sed -i "s|wanipreg|${wanip}|g" WindowsAgentAIOInstall.ps1
 sudo sed -i "s|keyreg|${key}|g" WindowsAgentAIOInstall.ps1
 
