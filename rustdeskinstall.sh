@@ -197,7 +197,7 @@ sudo sed -i "s|wanipreg|${wanip}|g" WindowsAgentAIOInstall.ps1
 sudo sed -i "s|keyreg|${key}|g" WindowsAgentAIOInstall.ps1
 
 # Create linux install script
-wget https://raw.githubusercontent.com/dinger1986/rustdeskinstall/master/linuxclientinstall.sh
+wget https://raw.githubusercontent.com/PhDLeToanThang/remotedesktop/main/linuxclientinstall.sh
 sudo sed -i "s|wanipreg|${wanip}|g" linuxclientinstall.sh
 sudo sed -i "s|keyreg|${key}|g" linuxclientinstall.sh
 
