@@ -113,6 +113,8 @@ cd /opt/rustdesk/ || exit 1
 
 #Download latest version of Rustdesk
 RDLATEST=$(curl https://api.github.com/repos/rustdesk/rustdesk-server/releases/latest -s | grep "tag_name"| awk '{print substr($2, 2, length($2)-3) }')
+
+#tim phien ban bang tay:  https://github.com/rustdesk/rustdesk-server/releases  --> Download > version 1.1.6: 
 wget "https://github.com/rustdesk/rustdesk-server/releases/download/${RDLATEST}/rustdesk-server-linux-x64.zip"
 unzip rustdesk-server-linux-x64.zip
 
