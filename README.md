@@ -44,10 +44,11 @@ Thực chất đây là WAN IPv4/ WAN DNS của dịch vụ này vì nếu bạn
 và khi hỏi đến các bước cuối về việc có Download Config của các bản Remote Client cho Windows / Linux Client và kết nối qua HTTP
 ![image](https://user-images.githubusercontent.com/106635733/186067946-26dcdaaa-9d58-44f4-bf06-71b1f1793ea7.png)
 
-Khi chọn : 1
+**Khi chọn : 1**
 Hệ thống sẽ tạo ra chữ ký số, User: Admin và Mật khẩu Random,
 Địa chỉ web HTTP://DNS:8000
 ![image](https://user-images.githubusercontent.com/106635733/186069419-d611744c-0984-411d-a9d1-1e25b9c98b74.png)
 
 **Kết quả truy cập web:**
+
 ![image](https://user-images.githubusercontent.com/106635733/186070552-17e396da-bb46-4e9a-aebb-2d275ad4dcdf.png)
