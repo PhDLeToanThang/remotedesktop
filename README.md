@@ -27,5 +27,4 @@ https://techviewleo.com/install-rustdesk-remote-desktop-on-ubuntu/
 
 --------------------------------------------------------------------
 **Lệnh để chạy thủ tục cài RemoteDesktop Server trên nền Ubuntu Linux:**
-https://raw.githubusercontent.com/PhDLeToanThang/mooc/master/update_moodle.sh && sudo bash update_moodle.sh
-
+https://raw.githubusercontent.com/PhDLeToanThang/remotedesktop/main/rustdeskinstall.sh && sudo bash rustdeskinstall.sh
