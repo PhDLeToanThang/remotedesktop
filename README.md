@@ -28,3 +28,26 @@ https://techviewleo.com/install-rustdesk-remote-desktop-on-ubuntu/
 --------------------------------------------------------------------
 **Lệnh để chạy thủ tục cài RemoteDesktop Server trên nền Ubuntu Linux:**
 https://raw.githubusercontent.com/PhDLeToanThang/remotedesktop/main/rustdeskinstall.sh && sudo bash rustdeskinstall.sh
+
+**Một số bước thực hiện và chuẩn bị cho dịch vụ Remote Desktop Server làm trên Ubuntu Linux Server:**
+![image](https://user-images.githubusercontent.com/106635733/186059882-c699bf05-5870-42ad-be19-1a6e709098fe.png)
+
+**Dừng ở bước hỏi IPv4 hay là DNS:**
+![image](https://user-images.githubusercontent.com/106635733/186061077-fdbd8487-8863-432f-a705-32e66e595e52.png)
+
+Theo tôi, bạn nên chọn DNS vì trong 2 tình huống bạn đều có lợi thế không phải thay đổi địa chỉ của Client/ Server nếu như các máy trạm bạn đã công bố sử dụng cho người dùng nhiều, từ xa, thậm trí cả thiết bị di động ... thì thật là phiền phức khi bị thay đổi địa chỉ ip.(Cấu hình ipv4 ở đây chỉ mang tính hỗ trợ thử nghiệm, làm trong mạng VPN/openVPN hoặc mạng LAN).
+
+Thực chất đây là WAN IPv4/ WAN DNS của dịch vụ này vì nếu bạn dùng cho từ internet để có thể remote P2P giữa các máy client ở internet thì IPv4 phải là public ở tầng internet (WAN IP4/DNS) nhé.
+
+![image](https://user-images.githubusercontent.com/106635733/186064570-43743e68-0f39-4a38-9f25-b6fd44dea062.png)
+
+và khi hỏi đến các bước cuối về việc có Download Config của các bản Remote Client cho Windows / Linux Client và kết nối qua HTTP
+![image](https://user-images.githubusercontent.com/106635733/186067946-26dcdaaa-9d58-44f4-bf06-71b1f1793ea7.png)
+
+Khi chọn : 1
+Hệ thống sẽ tạo ra chữ ký số, User: Admin và Mật khẩu Random,
+Địa chỉ web HTTP://DNS:8000
+![image](https://user-images.githubusercontent.com/106635733/186069419-d611744c-0984-411d-a9d1-1e25b9c98b74.png)
+
+**Kết quả truy cập web:**
+![image](https://user-images.githubusercontent.com/106635733/186070552-17e396da-bb46-4e9a-aebb-2d275ad4dcdf.png)
