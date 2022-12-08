@@ -114,9 +114,13 @@ cd /opt/rustdesk/ || exit 1
 #Download latest version of Rustdesk
 RDLATEST=$(curl https://api.github.com/repos/rustdesk/rustdesk-server/releases/latest -s | grep "tag_name"| awk '{print substr($2, 2, length($2)-3) }')
 
-#tim phien ban bang tay:  https://github.com/rustdesk/rustdesk-server/releases  --> Download > version 1.1.6-2: 
+#Tim phien ban thu cong:  https://github.com/rustdesk/rustdesk-server/releases  --> Download > version 1.1.6-2: 
 wget "https://github.com/rustdesk/rustdesk-server/releases/download/${RDLATEST}/rustdesk-server-linux-amd64.zip"
 unzip rustdesk-server-linux-amd64.zip
+mv amd64/* /opt/rustdesk/
+chmod +x /opt/rustdesk/hbbs
+chmod +x /opt/rustdesk/hbbr
+
 
 # Make Folder /var/log/rustdesk/
 if [ ! -d "/var/log/rustdesk" ]; then
@@ -184,7 +188,7 @@ done
 pubname=$(find /opt/rustdesk -name "*.pub")
 key=$(cat "${pubname}")
 
-rm rustdesk-server-linux-x64.zip
+rm rustdesk-server-linux-amd64.zip
 
 # Choice for DNS or IP
 PS3='Please choose if you want to download configs and install HTTP server:'
